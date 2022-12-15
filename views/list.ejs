@@ -1,0 +1,38 @@
+<%-include("header")-%>
+    <br><br><br><h2> <%= KindofDay %> </h2>
+    <div class="container">
+        
+    
+
+        <div id="newtask">
+
+        <form action="/" method="post">
+            <input type="text" name="newItem" autocomplete="off" placeholder="Add New Task">
+            <button id="push">Add</button>
+        </form>
+            
+        </div>
+        <div id="tasks">
+        <ul>
+
+        
+        <% for (let i=0;i<newListItems.length; i++){ %>
+            
+            <div class="item">
+                <input type="checkbox">
+                <li><%= newListItems[i] %></li>
+                
+          </div>
+            
+        <% } %>
+        </ul> 
+    </div>
+
+        <p style="color:rgb(0, 0, 0);text-align: center;padding-bottom: 4%;"><a href="/about" target="_blank"><button class="button button2">About Us</button></a></p>
+    
+    
+
+    
+</div>
+
+
