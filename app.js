@@ -34,7 +34,7 @@ app.get('/contact',function(req,res){
 });
 
 app.get('/myweb',function(req,res){
-    res.redirect("https://web.adithyacreation.repl.co")
+    res.redirect("https://adithya-creation.github.io/web/")
 });
 
 app.listen(3000, function(){
